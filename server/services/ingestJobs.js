@@ -8,10 +8,11 @@ export async function ingestJobs() {
         `https://${process.env.RAPIDAPI_HOST}/active-jb-24h`,
         {
             params: {
-                limit: 1, 
-                title_filter: "Data Engineer", 
+                limit: 5, 
+                title_filter: "Software Engineer", 
                 offset: '0',
                 location_filter: "United States", 
+                seniority_filter: "Entry level",
                 description_type: 'text'
             }, 
             headers: {

@@ -3,6 +3,6 @@ import { getIngestedJobs } from "../controllers/jobs.controller.js";
 
 const router = express.Router();
 
-router.route("/ingest").get(getIngestedJobs);
+router.get("/ingest", getIngestedJobs);
 
 export default router;

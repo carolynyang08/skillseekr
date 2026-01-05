@@ -17,6 +17,6 @@ app.get("/", (req, res) => {
   res.json({message: "skillseekr api running"});
 });
 
-app.get("/jobs/ingest", (req, res) => {
-  res.json({message: "Ingest jobs endpoint"});
-});
+// app.get("/jobs/ingest", (req, res) => {
+//   res.json({message: "Ingest jobs endpoint"});
+// });
