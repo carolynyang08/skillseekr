@@ -43,7 +43,7 @@ export default function JobCard({ job }: { job: Job }) {
 
             {/* {job.remote_derived && (
               <span className="mr-4">
-                🏠 Remote
+                Remote
               </span>
             )} */}
 

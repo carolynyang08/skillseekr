@@ -1,8 +1,14 @@
-import { ingestJobs } from '../services/ingestJobs.js';
+// import { ingestJobs, fetchJobs } from '../services/job.service.js';
+import { ingestJobs } from '../services/job.service.js';
 
 export async function getIngestedJobs(req, res) {
     try {
-        const jobs = await ingestJobs();
+        const { title, location, seniority } = req.query;
+        console.log("Controller received query params:", { title, location, seniority });
+
+        const jobs = await ingestJobs({ title, location, seniority });
+        console.log("Service returned jobs:", jobs.length);
+        
         const normalizedJobs = jobs.map(job => ({
             id: job.id,
             date_posted: job.date_posted,
@@ -18,12 +24,12 @@ export async function getIngestedJobs(req, res) {
         }))
 
         res.json({
-            success: true, 
-            count: normalizedJobs.length, 
-            jobs: normalizedJobs,
+            success: true,
+            count: normalizedJobs.length,
+            jobs: normalizedJobs
         });
     } catch (error) {
         console.error(error);
-        res.status(500).json({ error: "Failed to ingest jobs" });
+        res.status(500).json({ error: "Failed to fetch jobs" });
     }
 }
