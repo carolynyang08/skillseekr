@@ -1,5 +1,5 @@
 // import { ingestJobs, fetchJobs } from '../services/job.service.js';
-import { ingestJobs } from '../services/job.service.js';
+import { ingestJobs, scrapeJobs } from '../services/job.service.js';
 
 export async function getIngestedJobs(req, res) {
     try {
@@ -31,5 +31,29 @@ export async function getIngestedJobs(req, res) {
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: "Failed to fetch jobs" });
+    }
+}
+
+export async function getScrapedJobs(req, res) {
+    try {
+        const { title, company } = req.query;
+        console.log("Scrape controller received query params:", { title, company });
+
+        const jobs = await scrapeJobs({ title, company });
+        console.log("Scraper returned jobs:", jobs.length);
+
+        res.json({
+            success: true,
+            count: jobs.length,
+            company: company || "walmart",
+            jobs: jobs
+        });
+    } catch (error) {
+        console.error("Scraping error:", error);
+        res.status(500).json({
+            success: false,
+            error: "Failed to scrape jobs",
+            message: error.message
+        });
     }
 }

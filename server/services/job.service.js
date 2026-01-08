@@ -1,5 +1,6 @@
 import axios from "axios";
 import dotenv from "dotenv";
+import { scrapeWalmartJobs } from "../scrapers/walmart.scraper.js";
 
 dotenv.config();
 
@@ -136,4 +137,33 @@ export async function ingestJobs({title, location, seniority} = {}) {
 
     return allJobs;
     */
+}
+
+/**
+ * Scrapes jobs from company career pages
+ * @param {Object} params - Search parameters
+ * @param {string} params.title - Job title to search for
+ * @param {string} params.company - Company to scrape (default: "walmart")
+ * @returns {Promise<Array>} Array of scraped jobs
+ */
+export async function scrapeJobs({ title, company = "walmart" } = {}) {
+    try {
+        console.log(`Scraping jobs for company: ${company}, title: ${title}`);
+
+        // Route to appropriate scraper based on company
+        switch (company.toLowerCase()) {
+            case "walmart":
+                return await scrapeWalmartJobs(title || "software engineer");
+            // Add more companies here as you implement them
+            // case "amazon":
+            //     return await scrapeAmazonJobs(title);
+            // case "google":
+            //     return await scrapeGoogleJobs(title);
+            default:
+                throw new Error(`Scraper not implemented for company: ${company}`);
+        }
+    } catch (error) {
+        console.error("Error in scrapeJobs:", error);
+        throw error;
+    }
 }
