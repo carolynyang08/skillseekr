@@ -50,11 +50,9 @@ export async function fetchGreenhouseJobs(companyToken) {
                         title: job.title,
                         organization: job.company_name || companyToken,
                         organization_url: jobDetail.absolute_url,
-                        organization_logo: null, // Greenhouse doesn't provide logos
                         location: job.location?.name || 'N/A',
                         url: jobDetail.absolute_url,
                         date_posted: job.first_published || job.updated_at,
-                        employment_type: ['Full-time'], // Greenhouse doesn't always specify
                         remote_derived: jobDetail.metadata?.find(m => m.name === 'Workplace Type')?.value === 'Remote' || false,
                         description_text: descriptionText,
                         locations_derived: job.location?.name ? [job.location.name] : [],

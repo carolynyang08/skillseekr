@@ -1,0 +1,206 @@
+{
+  "discoveredAt": "2026-01-26T00:51:58.351Z",
+  "totalChecked": 42,
+  "validCount": 33,
+  "durationSeconds": 25,
+  "companies": [
+    {
+      "token": "doordashusa",
+      "valid": true,
+      "jobCount": 582,
+      "boardUrl": "https://boards.greenhouse.io/doordashusa"
+    },
+    {
+      "token": "stripe",
+      "valid": true,
+      "jobCount": 578,
+      "boardUrl": "https://boards.greenhouse.io/stripe"
+    },
+    {
+      "token": "datadog",
+      "valid": true,
+      "jobCount": 415,
+      "boardUrl": "https://boards.greenhouse.io/datadog"
+    },
+    {
+      "token": "anthropic",
+      "valid": true,
+      "jobCount": 358,
+      "boardUrl": "https://boards.greenhouse.io/anthropic"
+    },
+    {
+      "token": "coinbase",
+      "valid": true,
+      "jobCount": 341,
+      "boardUrl": "https://boards.greenhouse.io/coinbase"
+    },
+    {
+      "token": "axon",
+      "valid": true,
+      "jobCount": 329,
+      "boardUrl": "https://boards.greenhouse.io/axon"
+    },
+    {
+      "token": "airbnb",
+      "valid": true,
+      "jobCount": 245,
+      "boardUrl": "https://boards.greenhouse.io/airbnb"
+    },
+    {
+      "token": "remotecom",
+      "valid": true,
+      "jobCount": 240,
+      "boardUrl": "https://boards.greenhouse.io/remotecom"
+    },
+    {
+      "token": "dept",
+      "valid": true,
+      "jobCount": 208,
+      "boardUrl": "https://boards.greenhouse.io/dept"
+    },
+    {
+      "token": "brex",
+      "valid": true,
+      "jobCount": 181,
+      "boardUrl": "https://boards.greenhouse.io/brex"
+    },
+    {
+      "token": "figma",
+      "valid": true,
+      "jobCount": 173,
+      "boardUrl": "https://boards.greenhouse.io/figma"
+    },
+    {
+      "token": "aurorainnovation",
+      "valid": true,
+      "jobCount": 170,
+      "boardUrl": "https://boards.greenhouse.io/aurorainnovation"
+    },
+    {
+      "token": "instacart",
+      "valid": true,
+      "jobCount": 166,
+      "boardUrl": "https://boards.greenhouse.io/instacart"
+    },
+    {
+      "token": "reddit",
+      "valid": true,
+      "jobCount": 150,
+      "boardUrl": "https://boards.greenhouse.io/reddit"
+    },
+    {
+      "token": "gitlab",
+      "valid": true,
+      "jobCount": 146,
+      "boardUrl": "https://boards.greenhouse.io/gitlab"
+    },
+    {
+      "token": "robinhood",
+      "valid": true,
+      "jobCount": 127,
+      "boardUrl": "https://boards.greenhouse.io/robinhood"
+    },
+    {
+      "token": "gusto",
+      "valid": true,
+      "jobCount": 101,
+      "boardUrl": "https://boards.greenhouse.io/gusto"
+    },
+    {
+      "token": "vercel",
+      "valid": true,
+      "jobCount": 75,
+      "boardUrl": "https://boards.greenhouse.io/vercel"
+    },
+    {
+      "token": "discord",
+      "valid": true,
+      "jobCount": 70,
+      "boardUrl": "https://boards.greenhouse.io/discord"
+    },
+    {
+      "token": "hillel",
+      "valid": true,
+      "jobCount": 58,
+      "boardUrl": "https://boards.greenhouse.io/hillel"
+    },
+    {
+      "token": "mercury",
+      "valid": true,
+      "jobCount": 51,
+      "boardUrl": "https://boards.greenhouse.io/mercury"
+    },
+    {
+      "token": "kairospower",
+      "valid": true,
+      "jobCount": 49,
+      "boardUrl": "https://boards.greenhouse.io/kairospower"
+    },
+    {
+      "token": "pendo",
+      "valid": true,
+      "jobCount": 41,
+      "boardUrl": "https://boards.greenhouse.io/pendo"
+    },
+    {
+      "token": "corelight",
+      "valid": true,
+      "jobCount": 31,
+      "boardUrl": "https://boards.greenhouse.io/corelight"
+    },
+    {
+      "token": "hexarmor",
+      "valid": true,
+      "jobCount": 16,
+      "boardUrl": "https://boards.greenhouse.io/hexarmor"
+    },
+    {
+      "token": "bloomerang",
+      "valid": true,
+      "jobCount": 11,
+      "boardUrl": "https://boards.greenhouse.io/bloomerang"
+    },
+    {
+      "token": "rumble",
+      "valid": true,
+      "jobCount": 8,
+      "boardUrl": "https://boards.greenhouse.io/rumble"
+    },
+    {
+      "token": "cbeyondata",
+      "valid": true,
+      "jobCount": 8,
+      "boardUrl": "https://boards.greenhouse.io/cbeyondata"
+    },
+    {
+      "token": "shopltk",
+      "valid": true,
+      "jobCount": 7,
+      "boardUrl": "https://boards.greenhouse.io/shopltk"
+    },
+    {
+      "token": "universalaudio",
+      "valid": true,
+      "jobCount": 3,
+      "boardUrl": "https://boards.greenhouse.io/universalaudio"
+    },
+    {
+      "token": "inkhousehq",
+      "valid": true,
+      "jobCount": 2,
+      "boardUrl": "https://boards.greenhouse.io/inkhousehq"
+    },
+    {
+      "token": "netlify",
+      "valid": true,
+      "jobCount": 1,
+      "boardUrl": "https://boards.greenhouse.io/netlify"
+    },
+    {
+      "token": "resultsforamerica",
+      "valid": true,
+      "jobCount": 1,
+      "boardUrl": "https://boards.greenhouse.io/resultsforamerica"
+    }
+  ]
+}
